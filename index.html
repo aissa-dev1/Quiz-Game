@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Quiz Game</title>
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body class="color-purple">
+    <main class="container">
+      <header class="quiz-home-page page hide">
+        <p class="title">Quiz game</p>
+
+        <section class="quiz-home-intro">
+          <p class="intro-text">Welcome to the Quiz Game! Test your knowledge and have fun!</p>
+        </section>
+
+        <section class="quiz-home-actions">
+          <button id="home_play_btn" class="link-btn">Play</button>
+
+          <button id="home_settings_btn" class="link-btn">Settings</button>
+        </section>
+
+        <section class="quiz-home-features">
+          <div class="feature card-container">
+            <h3>Recent Achievements</h3>
+
+            <p>No achievements for the moment.</p>
+          </div>
+        </section>
+
+        <section class="quiz-home-social card-container">
+          <h3>Share the Fun</h3>
+
+          <p>Share links.</p>
+        </section>
+
+        <section class="quiz-home-tutorial card-container">
+          <h3>How to Play</h3>
+
+          <p>Learn how to play the game with our quick tutorial.</p>
+        </section>
+
+        <section class="quiz-home-feedback card-container">
+          <h3>Feedback</h3>
+
+          <p>We'd love to hear from you! Share your thoughts and suggestions.</p>
+        </section>
+      </header>
+
+      <header class="quiz-selection-page page hide">
+        <p class="title">Quiz game selection</p>
+
+        <section class="quiz-selection-inputs">
+          <div class="left-side-container">
+            <p>Select Quiz Category</p>
+
+            <select id="quiz_questions_select">
+              <option value="random">Random</option>
+
+              <option value="programming">Programming</option>
+
+              <option value="gaming">Gaming</option>
+            </select>
+          </div>
+
+          <div class="right-side-container">
+            <p>Number of questions</p>
+
+            <input id="quiz_questions_input" type="number" placeholder="(3 - 10)" />
+          </div>
+        </section>
+
+        <section class="quiz-selection-actions">
+          <button id="start_game_btn" class="link-btn">Start Game</button>
+
+          <button id="selection_setttings_btn" class="link-btn">Settings</button>
+
+          <button id="selection_exit_btn" class="link-btn">Exit</button>
+        </section>
+      </header>
+
+      <header class="quiz-game-page page hide">
+        <p class="title">Quiz game</p>
+
+        <section class="properties">
+          <section class="card-container">
+            <p class="card-title">Questions</p>
+
+            <p class="card-content"><span id="current_question"></span>/<span id="questions_count"></span></p>
+          </section>
+
+          <section class="card-container">
+            <p class="card-title">Timer</p>
+
+            <span id="timer" class="card-content"></span>
+          </section>
+
+          <section class="card-container">
+            <p class="card-title">Health</p>
+
+            <span id="health" class="card-content"></span>
+          </section>
+
+          <section class="card-container">
+            <p class="card-title">Score</p>
+
+            <span id="score" class="card-content"></span>
+          </section>
+
+          <section class="card-container">
+            <p class="card-title">High score</p>
+
+            <span id="high_score" class="card-content"></span>
+          </section>
+        </section>
+
+        <section class="data">
+          <p class="question"></p>
+
+          <section class="answers"></section>
+        </section>
+
+        <section class="status">
+          <p class="message">Begin the game by pressing any of the buttons above. Enjoy and good luck!</p>
+        </section>
+
+        <section class="game-actions">
+          <button id="question_skip_btn" class="skip-btn hide">Skip</button>
+
+          <button id="game_selection_btn" class="link-btn">Selection</button>
+
+          <button id="game_home_btn" class="link-btn">Home</button>
+        </section>
+      </header>
+
+      <header class="quiz-settings-page page hide">
+        <p class="title">Quiz game settings</p>
+
+        <section class="quiz-settings-intro">
+          <p class="intro-text">Customize your quiz experience</p>
+        </section>
+
+        <section class="general-settings settings">
+          <h3>General settings</h3>
+
+          <div class="sub-settings">
+            <p class="settings-view">Preferred language</p>
+
+            <select id="game_language_select">
+              <option value="english">English</option>
+
+              <option value="arabic">Arabic</option>
+            </select>
+          </div>
+
+          <div class="sub-settings">
+            <p class="settings-view">Preferred difficulty</p>
+
+            <select id="game_difficulty_select">
+              <option value="easy">Easy</option>
+
+              <option value="medium">Medium</option>
+
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="quiz-options settings">
+          <h3>Quiz options</h3>
+
+          <div class="sub-settings">
+            <p class="settings-view">Enable timer</p>
+
+            <label class="switch">
+              <input id="timer_switch" type="checkbox" checked />
+
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="sub-settings">
+            <p class="settings-view">Enable skip button</p>
+
+            <label class="switch">
+              <input id="skip_btn_switch" type="checkbox" />
+
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="sub-settings">
+            <p class="settings-view">Reveal answers on error</p>
+
+            <label class="switch">
+              <input id="reveal_answers_switch" type="checkbox" checked />
+
+              <span class="slider"></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="appearance settings">
+          <h3>Appearance</h3>
+
+          <div class="sub-settings">
+            <p class="settings-view">Dark mode</p>
+
+            <label class="switch">
+              <input id="theme_switch" type="checkbox" />
+
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="sub-settings">
+            <p class="settings-view">Preferred color</p>
+
+            <div class="colors">
+              <div class="color purple active" data-color="color-purple"></div>
+
+              <div class="color green" data-color="color-green"></div>
+
+              <div class="color blue" data-color="color-blue"></div>
+
+              <div class="color pink" data-color="color-pink"></div>
+
+              <div class="color red" data-color="color-red"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sound settings">
+          <h3>Sound</h3>
+
+          <div class="sub-settings">
+            <p class="message">This feature will be available soon.</p>
+          </div>
+        </section>
+
+        <section class="settings-actions">
+          <button id="settings_reset_btn" class="reset-btn">Reset</button>
+
+          <button id="settings_selection_btn" class="link-btn">Selection</button>
+
+          <button id="settings_home_btn" class="link-btn">Home</button>
+        </section>
+      </header>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

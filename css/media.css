@@ -1,0 +1,60 @@
+@media only screen and (max-width: 600px) {
+  .container .quiz-home-page .quiz-home-actions,
+  .container .quiz-selection-page .quiz-selection-actions,
+  .container .quiz-selection-page .quiz-selection-inputs,
+  .container .quiz-settings-page .settings-actions,
+  .container .quiz-game-page .game-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .container .quiz-home-page .card-container {
+    padding: 8px 0;
+  }
+
+  .container .quiz-game-page .properties,
+  .container .quiz-game-page .data .answers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container .quiz-home-page .quiz-home-intro .intro-text,
+  .container .quiz-home-page .card-container,
+  .container .quiz-game-page .properties .card-container,
+  .container .quiz-selection-page .quiz-selection-inputs .left-side-container,
+  .container .quiz-selection-page .quiz-selection-inputs .right-side-container {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container .quiz-home-page .quiz-home-actions,
+  .container .quiz-selection-page .quiz-selection-inputs,
+  .container .quiz-game-page .game-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container .quiz-selection-page .quiz-selection-actions,
+  .container .quiz-settings-page .settings-actions {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .container .quiz-selection-page .quiz-selection-actions .link-btn:first-child {
+    grid-column: span 2;
+  }
+
+  .container .quiz-home-page .card-container {
+    padding: 8px;
+  }
+
+  .container .quiz-game-page .properties,
+  .container .quiz-game-page .data .answers {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .container .quiz-home-page .quiz-home-intro .intro-text,
+  .container .quiz-home-page .card-container,
+  .container .quiz-game-page .properties .card-container,
+  .container .quiz-selection-page .quiz-selection-inputs .left-side-container,
+  .container .quiz-selection-page .quiz-selection-inputs .right-side-container {
+    text-align: left;
+  }
+}

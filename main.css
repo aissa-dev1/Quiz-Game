@@ -1,0 +1,99 @@
+@import "./css/media.css";
+@import "./css/pages.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --page-bg-color: #eaeaea;
+  --container-bg-color: #fff;
+  --container-color: #000;
+  --link-btn-color: #fff;
+  --link-btn-hover-bg-color: #eaeaea;
+  --link-btn-hover-color: #000;
+  --card-container-title-color: #fff;
+  --card-container-content-color: #fff;
+  --input-bg-color: #292a2d;
+  --input-color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 0.5rem;
+  font-family: system-ui;
+  background-color: var(--page-bg-color);
+}
+
+.color-purple {
+  --link-btn-bg-color: #8a2be2;
+  --card-container-bg-color: #8a2be2;
+  --switch-bg-color: #8a2be2;
+}
+
+.color-green {
+  --link-btn-bg-color: #a7d9a4;
+  --card-container-bg-color: #a7d9a4;
+  --switch-bg-color: #a7d9a4;
+}
+
+.color-blue {
+  --link-btn-bg-color: #7fb3d5;
+  --card-container-bg-color: #7fb3d5;
+  --switch-bg-color: #7fb3d5;
+}
+
+.color-pink {
+  --link-btn-bg-color: #f5b7b1;
+  --card-container-bg-color: #f5b7b1;
+  --switch-bg-color: #f5b7b1;
+}
+
+.color-red {
+  --link-btn-bg-color: #ff0000;
+  --card-container-bg-color: #ff0000;
+  --switch-bg-color: #ff0000;
+}
+
+.dark {
+  --page-bg-color: #333539;
+  --container-bg-color: #292a2d;
+  --container-color: #fff;
+  --link-btn-bg-color: #fff;
+  --link-btn-hover-bg-color: #333539;
+  --link-btn-hover-color: #fff;
+  --card-container-bg-color: #fff;
+  --card-container-content-color: #000;
+  --input-bg-color: #fff;
+  --input-color: #000;
+}
+
+.dark.color-purple {
+  --link-btn-color: #8a2be2;
+  --card-container-title-color: #8a2be2;
+}
+
+.dark.color-green {
+  --link-btn-color: #a7d9a4;
+  --card-container-title-color: #a7d9a4;
+}
+
+.dark.color-blue {
+  --link-btn-color: #7fb3d5;
+  --card-container-title-color: #7fb3d5;
+}
+
+.dark.color-pink {
+  --link-btn-color: #f5b7b1;
+  --card-container-title-color: #f5b7b1;
+}
+
+.dark.color-red {
+  --link-btn-color: #ff0000;
+  --card-container-title-color: #ff0000;
+}

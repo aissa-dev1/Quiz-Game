@@ -1,0 +1,55 @@
+.container .quiz-selection-page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.container .quiz-selection-page.hide {
+  display: none;
+}
+
+.container .quiz-selection-page .title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container .quiz-selection-page .quiz-selection-inputs {
+  display: grid;
+  gap: 8px;
+}
+
+.container .quiz-selection-page .quiz-selection-inputs .left-side-container,
+.container .quiz-selection-page .quiz-selection-inputs .right-side-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.container .quiz-selection-page .quiz-selection-inputs .left-side-container p,
+.container .quiz-selection-page .quiz-selection-inputs .right-side-container p {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.container .quiz-selection-page .quiz-selection-inputs .left-side-container select,
+.container .quiz-selection-page .quiz-selection-inputs .right-side-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  background-color: var(--input-bg-color);
+  color: var(--input-color);
+}
+
+.container .quiz-selection-page .quiz-selection-inputs .right-side-container input::placeholder {
+  color: var(--input-color);
+}
+
+.container .quiz-selection-page .quiz-selection-actions {
+  display: grid;
+  gap: 8px;
+}

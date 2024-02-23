@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--container-bg-color);
+  color: var(--container-color);
+  padding: 0.3rem 0.5rem;
+  width: 100%;
+}
+
+.container header .link-btn,
+.container .quiz-settings-page .settings-actions .reset-btn,
+.container .quiz-game-page .data .answers button,
+.container .quiz-game-page .game-actions .skip-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container header .link-btn {
+  background-color: var(--link-btn-bg-color);
+  color: var(--link-btn-color);
+}
+
+.container header .link-btn:hover,
+.container .quiz-settings-page .settings-actions .reset-btn,
+.container .quiz-game-page .data .answers button,
+.container .quiz-game-page .game-actions .skip-btn {
+  background-color: var(--link-btn-hover-bg-color);
+  color: var(--link-btn-hover-color);
+  border-radius: 4px;
+}

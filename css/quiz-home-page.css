@@ -1,0 +1,39 @@
+.container .quiz-home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container .quiz-home-page.hide {
+  display: none;
+}
+
+.container .quiz-home-page .title {
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container .quiz-home-page .quiz-home-intro .intro-text {
+  font-size: 0.9rem;
+}
+
+.container .quiz-home-page .title,
+.container .quiz-home-page .quiz-home-intro .intro-text {
+  font-weight: 500;
+}
+
+.container .quiz-home-page .quiz-home-actions {
+  display: grid;
+  gap: 8px;
+}
+
+.container .quiz-home-page .card-container h3 {
+  color: var(--card-container-title-color);
+}
+
+.container .quiz-home-page .card-container p {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--card-container-content-color);
+}
